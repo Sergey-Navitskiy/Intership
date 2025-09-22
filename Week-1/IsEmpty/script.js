@@ -9,6 +9,7 @@
 // isEmpty(firstObj);
 
 function isEmptyAnother(obj, property) {
+  // Проверить что св-о принадлежит этому объекту, а не родителю
   for (const key in obj) {
     if (key in obj) {
       console.log(`Свойство - ${key} существует`);
@@ -23,11 +24,20 @@ function isEmptyAnother(obj, property) {
   }
 }
 
-const firstObj1 = {
-  name: "Siarhei",
-  surname: "Navitski",
-  location: null,
-};
+const obj = { surName: "FQ" };
+
+// const firstObj1 = {
+//   name: "Siarhei",
+//   surname: "Navitski",
+//   location: null,
+// };
+
+const firstObj1 = Object.create(obj);
+console.log("🚀 ~ firstObj1:", firstObj1);
+
+// firstObj1.name = "Siarhei";
+// firstObj1.surname = "Navitski";
+// firstObj1.location = null;
 
 // isEmpty(firstObj);
-isEmptyAnother(firstObj, "sity");
+isEmptyAnother(firstObj1);
