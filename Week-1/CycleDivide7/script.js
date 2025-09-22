@@ -9,5 +9,5 @@ function cycle(array) {
   return dividedBySeven;
 }
 
-const array = [15, 8, 35, 24, 56, 73];
-console.log(cycle(array));
+const array1 = [15, 8, 35, 24, 56, 73];
+console.log(cycle(array1));
