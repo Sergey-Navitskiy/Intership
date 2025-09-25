@@ -5,7 +5,7 @@ function once(func) {
   return function (...args) {
     if (!hasBeenCalled) {
       hasBeenCalled = true;
-      result = func.apply(this, args);
+      result = func(...args);
     }
     return result;
   };
