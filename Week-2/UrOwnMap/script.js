@@ -12,7 +12,7 @@ function myMap(arr, callback) {
   const newArray = [];
 
   for (let i = 0; i < arr.length; i++) {
-    const result = callback(arr[i], i, arr);
+    const result = callback(arr[i], i, arr); // передаёт в него сам элемент, его индекс и весь массив
     newArray.push(result);
   }
   return newArray;

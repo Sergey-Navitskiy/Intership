@@ -4,9 +4,11 @@ function summArray(arr) {
   if (arr.length === 0) {
     return 0;
   }
-  const firstArrayElem = arr[0];
-  const restArray = arr.slice(1);
-  return firstArrayElem + summArray(restArray);
+  // const firstArrayElem = arr[0];
+  // const restArray = arr.slice(1);
+
+  const [current, ...rest] = arr;
+  return current + summArray(rest);
 }
 const numbers = [1, 2, 3, 4, 5];
 console.log(summArray(numbers));

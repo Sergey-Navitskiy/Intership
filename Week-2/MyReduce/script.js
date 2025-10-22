@@ -18,13 +18,13 @@ function myReduce(arr, funct, initialValue) {
 
 const arr = [1, 2, 3, 4];
 
-// Функция для сложения
+// сложение
 const sumFunc = (acc, val) => acc + val;
 
 // С начальным значением 10
 const result1 = myReduce(arr, sumFunc, 10);
 console.log(result1); // Ожидаем 20
 
-// Без начального значения
+// Без значения
 const result2 = myReduce(arr, sumFunc);
 console.log(result2); // Ожидаем 10
