@@ -1,0 +1,19 @@
+.task-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.task-button-container {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gray-button {
+  background-color: gray;
+}
+
+.content-box {
+  min-height: 100px;
+}

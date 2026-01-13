@@ -1,0 +1,30 @@
+:root {
+  --primary-green: #7cb342;
+  --light-green-bg: #f1f8e9;
+  --text-dark: #333333;
+  --text-grey: #666666;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-dark);
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

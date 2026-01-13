@@ -1,0 +1,39 @@
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  justify-content: center;
+}
+
+.button-red {
+  background-color: blue;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  gap: 5px;
+}
+
+.button-group button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-group button:active {
+  transform: translateY(1px);
+}
